@@ -11,15 +11,16 @@
     .meta { color: #667085; }
     .ko { margin-top: 56px; padding-top: 32px; border-top: 1px solid #e4e7ec; }
     a { color: #1d4ed8; }
+    code { font-size: 0.9em; background: #f2f4f7; padding: 0.1em 0.35em; border-radius: 4px; }
   </style>
 </head>
 <body>
   <h1>Support &amp; FAQ</h1>
-  <p class="meta">Snap Full Page · Last updated: 16 November 2026 (Asia/Seoul)<br>
+  <p class="meta">Snap Full Page · Version 0.3.0 · Last updated: 23 November 2026 (Asia/Seoul)<br>
     Contact: <span data-contact><a href="mailto:kimdoosi@kimdoosi.com">kimdoosi@kimdoosi.com</a></span></p>
 
   <h2>What does the free extension do?</h2>
-  <p>It captures a full web page, the visible area, or a selected region, then lets you crop, annotate, copy, and save the image on your device. Screenshots are not uploaded.</p>
+  <p>It captures a full web page, the visible area, or a selected region, then lets you crop, annotate, copy, and save PNG or JPG images on your device. Capture, crop, and annotate are free and unlimited. Screenshots are not uploaded.</p>
 
   <h2>Why can’t I capture some pages?</h2>
   <p>Chrome blocks extensions on browser pages such as <code>chrome://</code>, Settings, the New Tab page, and the Chrome Web Store. Local files need Chrome’s “Allow access to file URLs” setting if you want to capture them.</p>
@@ -31,21 +32,22 @@
   <p>Only on your device. Unsaved captures stay in the browser for one hour, then they are deleted. Use Save PNG, Save JPG, or Copy if you want to keep them.</p>
 
   <h2>What is Pro?</h2>
-  <p>Planned Pro features include PDF export and sensitive-information blur. In version 0.2.0 these tools exist in the editor but are locked, and <strong>there is no way to buy Pro</strong>. Payment is not integrated. This page will be updated before any paid plan is offered.</p>
+  <p>Snap Full Page Pro is $9.99/year, sold by <a href="https://polar.sh/doosi">Polar</a> (merchant of record). A license key unlocks PDF export and auto-blur of emails, phone numbers, and card numbers on up to 3 devices. Capture, crop, and annotate stay free. Enter the key in the extension popup or the Pro dialog. Watermark templates and all-tabs capture are not in version 0.3.0.</p>
+  <p>When a license key is active, the extension contacts only <code>https://api.polar.sh</code> and sends only the license key (with Polar’s organization id and activation id) to activate, validate, or deactivate it. If Polar cannot be reached, Pro remains unlocked for up to 7 days after the last successful check.</p>
 
-  <h2>Refunds and cancellation (placeholder)</h2>
-  <p>There are no paid plans and no subscriptions in this version, so there is nothing to refund or cancel through us or through Google.</p>
-  <p>If a paid Pro plan is added later, this section will explain: which payments provider processes the charge (a third party, not Google or the Chrome Web Store), how to cancel a subscription if one exists, how to request a refund, typical timelines, and the support email to use. Until a provider is chosen, treat this as a placeholder only.</p>
+  <h2>Refunds and cancellation</h2>
+  <p>Polar processes the charge. Open <a href="https://polar.sh/doosi/portal">https://polar.sh/doosi/portal</a> to manage or cancel the subscription and to request a refund. The receipt email from Polar links to the same portal. For help with the extension itself, email <span data-contact><a href="mailto:kimdoosi@kimdoosi.com">kimdoosi@kimdoosi.com</a></span>. Google and the Chrome Web Store do not process this purchase.</p>
 
   <h2>Privacy</h2>
-  <p>See the <a href="./privacy.html">Privacy Policy</a>. The extension does not collect user data.</p>
+  <p>See the <a href="./privacy.html">Privacy Policy</a>. Screenshots, page URLs, and annotations never leave your device; only a Pro license key (if you enter one) is sent to Polar.</p>
 
   <div class="ko" lang="ko">
     <h1>지원 및 FAQ</h1>
-    <p class="meta">Snap Full Page · 최종 업데이트: 2026년 11월 16일 (Asia/Seoul)<br>
+    <p class="meta">Snap Full Page · 버전 0.3.0 · 최종 업데이트: 2026년 11월 23일 (Asia/Seoul)<br>
       연락처: <span data-contact><a href="mailto:kimdoosi@kimdoosi.com">kimdoosi@kimdoosi.com</a></span></p>
-    <p>무료 기능은 전체 페이지·보이는 화면·선택 영역 캡처와 자르기, 주석, 저장, 복사입니다. 스크린샷은 업로드되지 않고 이 기기에만 있습니다. 매우 긴 페이지는 팝업에서 높이 한도를 올리거나 에디터의 “더 캡처”로 이어 찍을 수 있습니다.</p>
-    <p>0.2.0의 Pro(PDF, 민감정보 흐리기)는 아직 구매할 수 없습니다. 유료 플랜이 생기면, 결제 업체(Google이 아님), 구독 취소, 환불 요청 방법과 일정을 이 페이지에 안내하겠습니다. 지금은 환불·취소할 유료 결제가 없습니다.</p>
+    <p>무료 기능은 전체 페이지·보이는 화면·선택 영역 캡처와 자르기, 주석, PNG/JPG 저장, 복사입니다. 캡처, 자르기, 주석은 무료로 무제한 이용할 수 있습니다. 스크린샷은 업로드되지 않고 이 기기에만 남습니다. 매우 긴 페이지는 팝업에서 높이 한도를 올리거나 에디터의 “더 캡처”로 이어 찍을 수 있습니다.</p>
+    <p>Snap Full Page Pro는 연 $9.99이며 판매자(merchant of record)는 <a href="https://polar.sh/doosi">Polar</a>입니다. 라이선스 키로 PDF 내보내기와 이메일·전화번호·카드번호 자동 흐리기가 최대 3대 기기에서 열립니다. 워터마크와 모든 탭 캡처는 0.3.0 버전에 없습니다. 라이선스 키를 입력하면 <code>https://api.polar.sh</code> 에만 접속하며 라이선스 키 외의 데이터(스크린샷·URL·주석)는 전송하지 않습니다.</p>
+    <p>구독 관리·취소·환불은 <a href="https://polar.sh/doosi/portal">https://polar.sh/doosi/portal</a> 에서 Polar가 처리합니다. Polar 영수증 이메일에도 같은 포털 링크가 포함되어 있습니다. 확장 프로그램 사용 문의는 <span data-contact><a href="mailto:kimdoosi@kimdoosi.com">kimdoosi@kimdoosi.com</a></span> 입니다. Google과 Chrome 웹 스토어는 이 결제를 처리하지 않습니다.</p>
   </div>
 </body>
 </html>
