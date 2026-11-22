@@ -19,36 +19,38 @@
 <body>
   <h1>Privacy Policy</h1>
   <p class="meta">Snap Full Page (Chrome extension)<br>
-    Last updated: 16 November 2026 (Asia/Seoul)<br>
-    Version described: 0.2.0<br>
+    Last updated: 23 November 2026 (Asia/Seoul)<br>
+    Version described: 0.3.0<br>
     Contact: <span data-contact><a href="mailto:kimdoosi@kimdoosi.com">kimdoosi@kimdoosi.com</a></span></p>
 
   <p>This policy describes how the Snap Full Page browser extension (“the extension”) handles information. It applies to the Chrome Web Store listing and to the installed extension.</p>
 
-  <h2>We do not collect user data</h2>
-  <p>The extension does not collect, sell, share, or transmit your screenshots, browsing history, or any other user data to us or to any third party. It does not include analytics, advertising, crash reporting, or social-media SDKs.</p>
-  <p>When you take a screenshot, pixels are captured in the current tab and processed only on your device. Saved files stay wherever you choose to store them (for example, your Downloads folder or clipboard).</p>
-
-  <h2>What stays on your device</h2>
+  <h2>Screenshots stay on your device</h2>
+  <p>The extension does not collect, sell, or share your screenshots, page content, browsing history, or annotations. It does not include analytics, advertising, crash reporting, or remote scripts.</p>
+  <p>When you take a screenshot, pixels are captured in the current tab and processed only on your device. Saved files stay wherever you choose to store them (for example, your Downloads folder or the clipboard).</p>
   <ul>
     <li>Screenshot images, including crop and annotation data, are stored locally in the browser (IndexedDB) so you can edit them.</li>
     <li>Local captures are automatically removed after one hour, or when you clear the extension’s site data.</li>
-    <li>Optional settings (for example, maximum capture height, or a local developer flag used only during testing) are stored in the same local database.</li>
-    <li>No account is created with us to use the free features.</li>
+    <li>Turning Pro off, or removing a license key, does not delete those captures.</li>
+    <li>Optional settings (for example, maximum capture height) are stored in the same local database.</li>
   </ul>
 
-  <h2>Permissions</h2>
-  <p>The published extension requests only <code>activeTab</code> and <code>scripting</code>. These are used when you click the toolbar icon or a capture command, so the extension can take and stitch a screenshot of the tab you are looking at. The extension does not run on every website in the background, and it does not read pages you have not asked it to capture.</p>
+  <h2>License key — the only user data that leaves the device</h2>
+  <p>Snap Full Page Pro is $9.99 per year and is sold by <a href="https://polar.sh/doosi">Polar</a>, the merchant of record. PDF export and auto-blur of emails, phone numbers, and card numbers unlock with a license key. Capture, crop, and annotate stay free. Watermark templates and capturing all tabs at once are not included in this version.</p>
+  <p>If you enter a license key, the extension sends <strong>that key</strong> to Polar at <code>https://api.polar.sh</code> so Polar can activate, validate, or deactivate it. Nothing else leaves the device. Screenshots, page addresses, page content, and annotations are not sent to Polar or to us. We do not run our own server for this extension, and the extension contains no access token or other secret.</p>
+  <p>The same request also includes Polar’s organization id (a fixed value built into the extension), the activation id Polar returns for this device, and an empty label field that Polar’s activate API requires. That label is empty on purpose: it is not your name, a device name, or an account id.</p>
+  <p>The key is checked again about every 24 hours and when the browser starts. If Polar cannot be reached, Pro remains available for 7 days after the last successful check. If the key is revoked, expired, unknown, or not for this product, Pro turns off immediately and your screenshots stay on the device.</p>
+  <p>“Upgrade” opens Polar’s checkout in a new browser tab. The extension does not embed Polar’s checkout script. You can manage or cancel the subscription, and request a refund, at <a href="https://polar.sh/doosi/portal">polar.sh/doosi/portal</a>. Polar’s receipt email links to that portal as well.</p>
 
-  <h2>Pro features and payments (not available in 0.2.0)</h2>
-  <p>PDF export and sensitive-information blur are included in the 0.2.0 editor but are locked unless a local test flag is turned on. They are <strong>not for sale</strong> in this version. Payment is not integrated. There is no in-app purchase and no payment processor in the extension.</p>
-  <p>If a paid Pro plan is offered later, purchases would be handled by a third-party payments provider (not Google). Before anything is sold, this policy, the Chrome Web Store listing, and the support page will be updated to name the provider, describe what license or account data is exchanged, and explain how to request a refund or cancellation. Until then, the extension still does not send any data off your device for licensing.</p>
+  <h2>Permissions</h2>
+  <p>The extension requests <code>activeTab</code> and <code>scripting</code>. These are used when you click the toolbar icon or a capture command, so the extension can take and stitch a screenshot of the tab you are looking at. It does not run on every website in the background, and it does not read pages you have not asked it to capture.</p>
+  <p>It also requests access to <code>https://api.polar.sh/*</code>. That host is used only for the license-key requests described above.</p>
 
   <h2>Children</h2>
   <p>The extension is not directed at children and does not knowingly collect personal information from children.</p>
 
   <h2>Changes</h2>
-  <p>If this policy changes, we will update the date above and, when a change is material, the Chrome Web Store listing or an in-extension notice.</p>
+  <p>If this policy changes, we will update the date above and, when a change is material, the Chrome Web Store listing or an in-extension notice. Version 0.3.0 is the first version that sends a license key to Polar. Earlier versions did not send any data off the device.</p>
 
   <h2>Contact</h2>
   <p>Questions about this policy: <span data-contact><a href="mailto:kimdoosi@kimdoosi.com">kimdoosi@kimdoosi.com</a></span>.</p>
@@ -56,12 +58,16 @@
   <div class="ko" lang="ko">
     <h1>개인정보 처리방침</h1>
     <p class="meta">Snap Full Page (Chrome 확장 프로그램)<br>
-      최종 업데이트: 2026년 11월 16일 (Asia/Seoul)<br>
-      대상 버전: 0.2.0<br>
+      최종 업데이트: 2026년 11월 23일 (Asia/Seoul)<br>
+      대상 버전: 0.3.0<br>
       연락처: <span data-contact><a href="mailto:kimdoosi@kimdoosi.com">kimdoosi@kimdoosi.com</a></span></p>
-    <p>이 확장 프로그램은 스크린샷, 방문 기록, 그 밖의 사용자 데이터를 개발자나 제3자에게 수집·판매·공유·전송하지 않습니다. 분석, 광고, 오류 보고, 소셜 SDK를 포함하지 않습니다.</p>
-    <p>스크린샷은 현재 탭에서 촬영되며 사용자 기기 안에서만 처리됩니다. 편집용 이미지는 브라우저의 IndexedDB에 잠시 저장되고 1시간 후 삭제됩니다. 게시 버전은 <code>activeTab</code>과 <code>scripting</code> 권한만 사용하며, 도구 모음 아이콘이나 캡처 명령을 클릭했을 때만 해당 탭에 접근합니다.</p>
-    <p>0.2.0의 PDF 보내기와 민감정보 흐리기는 구현되어 있으나 결제 연동이 없어 판매되지 않습니다. 유료 Pro가 나중에 제공될 경우, Google이 아닌 제3자 결제 업체를 사용하며, 판매 전에 이 방침과 스토어 등록 정보, 지원 페이지를 업데이트합니다.</p>
+    <p>스크린샷, 페이지 내용, 방문 기록, 주석은 수집·판매·공유하지 않습니다. 분석, 광고, 오류 보고, 원격 스크립트는 포함하지 않습니다. 캡처한 이미지는 이 기기에서만 처리되며, 편집용 복사본은 브라우저 IndexedDB에 잠시 저장되고 1시간 후 삭제됩니다. Pro를 끄거나 라이선스 키를 지워도 스크린샷은 삭제되지 않습니다.</p>
+    <p>Snap Full Page Pro는 연 $9.99이며 판매자(merchant of record)는 Polar입니다. 라이선스 키를 입력하면 <strong>그 키</strong>만 사용자 데이터로 Polar(<code>https://api.polar.sh</code>)에 전송되어 활성화·확인·비활성화됩니다. 그 밖의 데이터는 기기를 떠나지 않습니다. 스크린샷, 페이지 주소, 페이지 내용, 주석은 Polar나 개발자에게 전송되지 않습니다. 확장 프로그램에는 액세스 토큰이나 그 밖의 비밀이 없습니다.</p>
+    <p>요청에는 Polar 조직 ID(확장 프로그램에 들어 있는 고정 값), Polar가 돌려준 활성화 ID, 그리고 Polar 활성화 API가 요구하는 빈 라벨이 함께 포함됩니다. 라벨은 이름이나 기기 식별자가 아니며 일부러 비워 둡니다.</p>
+    <p>키는 약 24시간마다, 그리고 브라우저가 시작될 때 다시 확인합니다. Polar에 연결할 수 없으면 마지막으로 확인에 성공한 때부터 7일 동안 Pro가 유지됩니다. 키가 취소·만료되었거나 이 제품의 키가 아니면 Pro는 즉시 꺼지고, 스크린샷은 기기에 남습니다.</p>
+    <p>업그레이드는 Polar 결제 페이지를 새 탭에서 엽니다. Polar의 결제 스크립트를 확장 프로그램 안에 불러오지 않습니다. 구독 관리, 해지, 환불 요청은 <a href="https://polar.sh/doosi/portal">polar.sh/doosi/portal</a>에서 합니다.</p>
+    <p>권한은 <code>activeTab</code>, <code>scripting</code>, 그리고 라이선스 확인에만 쓰는 <code>https://api.polar.sh/*</code> 입니다. 캡처 도구나 명령을 눌렀을 때만 해당 탭에 접근합니다.</p>
+    <p>문의: <span data-contact><a href="mailto:kimdoosi@kimdoosi.com">kimdoosi@kimdoosi.com</a></span></p>
   </div>
 </body>
 </html>
